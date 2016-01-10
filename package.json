@@ -1,0 +1,16 @@
+{
+  "name": "angular_note",
+  "private": false,
+  "version": "1.0.0",
+  "description": "practice",
+  "repository": "tbd",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
