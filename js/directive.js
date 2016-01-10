@@ -30,11 +30,18 @@ angular.module("myDirectives", [])
         }
         scope.restore();
       };
+      scope.delete = function(index) {
+        if (index !== undefined) {
+          console.log(index)
+          notesFactory.delete(index);
+          console.log("Note deleted");
+        }
+      }
       var editor = elem.find('#editor');
 
       scope.restore();  // initialize our app controls
       scope.notes = notesFactory.getAll(); // load notes
-
+      // What does this do?
       editor.bind('keyup keydown', function() {
         scope.noteText = editor.text().trim();
       });

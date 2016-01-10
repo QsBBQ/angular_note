@@ -2,6 +2,7 @@
   <ul>
     <li ng-repeat="note in notes|orderBy:'id'">
       <a href="#" ng-click="openEditor(note.id)">{{note.title}}</a>
+      <span><a href="#" ng-click="delete(note.id)">Delete</a></span>
     </li>
   </ul>
 </div>

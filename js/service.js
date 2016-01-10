@@ -8,6 +8,9 @@ angular.module('myServices', [])
     get: function(index) {
       return JSON.parse(localStorage.getItem('note' + index));
     },
+    delete: function(index) {
+      localStorage.removeItem("note" + index)
+    },
     getAll: function() {
       var notes = [];
       for (var i = 0; i < localStorage.length; i++) {
