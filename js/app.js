@@ -1,1 +1,1 @@
-angular.module("myNote", ["myControllers", "myDirectives"])
+angular.module("myNote", ["myControllers", "myDirectives", "myServices"])
